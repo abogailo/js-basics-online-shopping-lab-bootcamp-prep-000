@@ -10,7 +10,9 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- cart.push(item)
+ var price = 1;
+ cart.push({[item]: price})
+ return cart
 }
 
 function viewCart() {
