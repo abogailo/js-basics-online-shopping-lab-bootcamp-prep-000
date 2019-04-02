@@ -10,7 +10,8 @@ function setCart(c) {
 }
 
 function addToCart(item) {
-
+ cart.push(item) // add cart can add items to the cart
+ return item
 }
 
 function viewCart() {
