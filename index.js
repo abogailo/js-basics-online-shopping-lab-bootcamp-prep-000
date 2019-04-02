@@ -11,7 +11,8 @@ function setCart(c) {
 
 function addToCart(item) {
  var price = 1;
- cart.push({[item]: price})
+ var itemName = item;
+ cart.push({[itemName]: price})
  return cart
 }
 
