@@ -10,7 +10,9 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- cart.push(item) // add cart can add items to the cart
+ var price = 1; // add cart can add items to the cart
+ (Object.assign({}, item, {[itemName]: item, [itemPrice]: price}))
+ cart.push(item)
  return cart
 }
 
